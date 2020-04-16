@@ -1,6 +1,6 @@
 # LiteConfig
 
-[Packagist]()
+[Packagist](https://packagist.org/packages/rollylni/liteconfig)
 
 1. multifunctional 
 2. the ability to add your own formats
