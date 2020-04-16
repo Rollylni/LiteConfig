@@ -1,0 +1,18 @@
+{
+    "name": "Rollylni/LiteConfig",
+    "description": "Lite config",
+    "keywords": ["config", "lite"],
+    "type": "library",
+    "homepage": "https://github.com/Rollylni/LiteConfig",
+    "license": "MIT",
+    "authors": [{
+        "name": "Rolly lni",
+        "email": "dimadersekt@gmail.com"
+    }],
+    "require": {
+        "php": ">=7.0"
+    },
+    "autoload": {
+        "psr-4": { "LCF\\": "src/LCF" }
+    }
+}
