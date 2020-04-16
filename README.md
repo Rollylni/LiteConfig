@@ -49,7 +49,7 @@ class MyFormat extends Format implements Parser, Writer {
         return "JavaScript Object Notation";
     }
     
-    public function parser(string $content = "") {
+    public function parse(string $content = "") {
         return json_decode($content, true);
     }
     
