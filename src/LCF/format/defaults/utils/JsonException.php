@@ -24,6 +24,6 @@ namespace LCF\format\defaults\utils;
 
 use LCF\ConfigException;
 
-class ArrayException extends ConfigException {
+class JsonException extends ConfigException {
     
 }
