@@ -1,0 +1,2 @@
+# LiteConfig
+Lite config
