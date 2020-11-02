@@ -9,6 +9,8 @@
 
 # Example usage
 ```php
+require "vendor/autoload.php";
+
 $cfg = new Config("File.json"); //detect format by extension
 $cfg->load([
     "default_formats" => ["yaml", "json", "ini", "enum", "serialize"],
