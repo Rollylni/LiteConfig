@@ -10,13 +10,18 @@
 # Example usage
 ```php
 $cfg = new Config("File.json"); //detect format by extension
-$cfg->load();
+$cfg->load([
+    "default_formats" => ["yaml", "json", "ini", "enum", "serialize"],
+    "default_key" => "default_value"
+]);
 $cfg->set("key", "value");
 $cfg->save();
 ```
 **File.json**:
 ```json
 {
+   "default_formats": ["yaml", "json", "ini", "enum", "serialize"],
+   "default_key": "default_value",
    "key": "value"
 }
 ```
