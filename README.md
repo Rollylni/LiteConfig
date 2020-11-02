@@ -11,7 +11,7 @@
 ```php
 require "vendor/autoload.php";
 
-$cfg = new Config("File.json"); //detect format by extension
+$cfg = new LiteConfig\Config("File.json"); //detect format by extension
 $cfg->load([
     "default_formats" => ["yaml", "json", "ini", "enum", "serialize"],
     "default_key" => "default_value"
@@ -26,4 +26,30 @@ $cfg->save();
    "default_key": "default_value",
    "key": "value"
 }
+```
+
+# Make your own format
+```php
+require "vendor/autoload.php";
+
+use LiteConfig\Format\Format;
+use LiteConfig\Config;
+
+class MyFormat extends Format {
+
+    public function getName() {
+        return "My own Format";
+    }
+    
+    public function read(string $input): array {
+         return json_decode(base64_decode($input));
+    }
+    
+    public function write(array $input): string {
+        return base64_encode(json_encode($input));
+    }
+}
+$format = new MyFormat("json64");
+$format->addAlias("js64");
+Config::addFormat($format);
 ```
