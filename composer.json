@@ -9,16 +9,15 @@
   "license": "MIT",
 
   "authors": [{
-    "name": "Mark Anthony",
-    "email": "gdrolly@gmail.com",
+    "name": "Faruch N.",
+    "email": "rollyllni@gmail.com",
     "homepage": "https://vk.com/rollylni",
     "role": "Developer"
   }],
 
   "require": {
     "php": ">=7.1",
-    "ext-json": "*",
-    "ext-yaml": "*"
+    "ext-json": "*"
   },
 
   "autoload": {
