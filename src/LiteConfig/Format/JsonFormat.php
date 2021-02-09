@@ -34,7 +34,7 @@ class JsonFormat extends Format {
      * @return (scalar|array)[]
      */
     public function read(string $content): array {
-       return json_decode($content) ?? [];
+       return json_decode($content, true) ?? [];
     }
 
     /**
